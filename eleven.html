@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu bar</title>
+    <style>
+    li{
+
+        float: left;
+        list-style: none;
+        padding: 13px;
+    }
+    header{
+        background-color: aqua;
+
+    }
+    ul{
+        overflow: auto;
+        /* if we dont apply this overflow=auto then the bavckgroud color of div will not be shoen */
+    }
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        color: red;
+    }
+    a:visited{
+        background-color: brown;
+    }
+    input{
+        float: right;
+        padding: 4px;
+        margin: 7px 8px;
+    }
+     body{
+        background-image: url("gym4.png");
+        /* size of image should be width=1400 and height=800 */
+        background-repeat: no-repeat;
+       
+        height: 800px;
+       
+    } 
+    img{
+        width: -webkit-fill-available;
+    }
+    </style>
+  
+</head>
+<body>
+    <!-- <background-image src="https://th.bing.com/th/id/OIP.HDlQ3-AQ6GYgPo2Vv5QvYQAAAA?w=214&h=297&c=7&o=5&pid=1.7"></background-image> -->
+    <!-- <img src="https://th.bing.com/th/id/OIP.HDlQ3-AQ6GYgPo2Vv5QvYQAAAA?w=214&h=297&c=7&o=5&pid=1.7" alt=""> -->
+    <header>
+    <div class="middle">
+    <ul>
+        <li><a href="">HOME</a></li>
+        <li><a href="">ABOUT</a></li>
+        <li><a href="">CONTACT</a></li>
+        <input type="text" placeholder="search">
+    </ul>
+    </div> 
+    <div class="left">
+        
+    </div>
+</header>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container{
+            width: 100%;
+            height: 544px;
+            border: 2px solid red;
+            display: flex;
+            flex-direction: row;
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse;
+            flex-direction: row; */
+            /* flex-wrap: wrap; */
+            /* flex wrap is used for minimizing the content of page according to the sie of screen eg. mobile anfd laptop */
+            /* flex-wrap: wrap-reverse; */
+
+/*             
+            justify-content: center;
+            justify-content: space-between;
+            align-items: flex-end;
+            align-items: center;
+            
+            /* try applying eah item individually */
+     
+        }
+        .box{
+            width: 100px;
+            height: 200px;
+            border: 2px solid  ;
+            padding: 10px;
+            background-color: green;
+            margin: 3px;
+        }
+
+        #one{
+            order: 5;
+            /* higher the ordr latr it shoews in container */
+            flex-grow: 3;
+            /* if their is empty space then first will take more space */
+        }
+        #two{
+            flex-shrink: 3;
+            /* if their is less space then second eill shrink more  */
+        }
+        #three{
+            align-self: center;
+        }
+        #four{
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <h1>this is flexbox</h1>
+    <div class="container">
+        <div id="one" class="box">
+            <h2>first div</h2>
+        </div>
+        <div id="two" class="box">
+            <h2>second div</h2>
+        </div>
+        <div id="three" class="box">
+            <h2>third div</h2>
+        </div>
+        <div id="four" class="box">
+            <h2>fourth div</h2>
+        </div>
+        <div id="five" class="box">
+            <h2>fifth div</h2>
+        </div>
+        <div id="six" class="box">
+            <h2>sixth div</h2>
+        </div>
+    </div>
+</body>
+</html>

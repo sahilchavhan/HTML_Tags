@@ -1,0 +1,14 @@
+{
+  "name": "c",
+  "version": "1.0.0",
+  "description": "this is the best package",
+  "main": "tut6.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "best"
+  ],
+  "author": "sahil",
+  "license": "ISC"
+}

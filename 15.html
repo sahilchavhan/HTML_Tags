@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        #one{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            animation-name: car;
+            animation-duration: 12s;
+            animation-iteration-count: 4;
+            /* animation-direction: reverse; */
+            /* animation-direction: alternate; */
+            /* animation-delay: 5s; */
+            animation-timing-function: ease-in;
+            animation-timing-function: ease-out;
+            animation-timing-function: ease-in-out;
+
+            
+        }
+        #two{
+            background-color: black;
+            height: 100px;
+            position: absolute;
+            animation-name: bike;
+            animation-duration: 12s;
+            animation-iteration-count: 5;
+
+        }
+        @keyframes car{
+            from{
+                width: 300px;
+            }
+            to{
+                width: 700px;
+            }
+        }
+
+        @keyframes bike{
+            0%{
+                top: 300px;
+                left: 0px;
+            }
+            25%{
+                top: 300px;
+                left: 600px;
+            }
+            50%{
+                top: 600px;
+                left: 600px;
+
+            }
+            75%{
+                top: 600px;
+                left: 0px;
+
+            }
+            100%{
+                top: 300px;
+                left: 0px;
+
+            }
+        }
+        #three{
+            background-image: url("img1.jpg");
+            height: 600px;
+            animation-name: scooty;
+            animation-duration: 12s;
+            animation-iteration-count: 4;
+            animation-direction: alternate;
+        }
+
+        @keyframes scooty{
+            from{
+                background-image: url("img1.jpg");
+            }
+            to{
+                background-image: url("gym4.png");
+
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="three">
+    <div id="one">
+        first
+    </div>
+    <div id="two">
+        second
+    </div>
+</div>
+</body>
+</html>

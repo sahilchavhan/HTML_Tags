@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>height width and border</title>
+    <style>
+        #one{
+             background-color: red;
+             height: 100px;
+             width: 1000px;
+             border-color: green;
+             border-width: 4 px;
+             border-radius: 20px;
+             border-style: solid;
+        }
+        #two{
+             background-color: red;
+             height: 100px;
+             width: 1000px;
+             /* border-color: green;
+             border-width: 4 px;
+             border-radius: 20px;
+             border-style: solid; */
+             border-top: 20px solid green ;
+             border-bottom: 10px solid black;
+        }
+        #three{
+             /* background-color: red; */
+             height: 100px;
+             width: 1000px;
+             /* border-color: green;
+             border-width: 4 px;
+             border-radius: 20px;
+             border-style: solid; */
+             background-image: url("https://th.bing.com/th/id/OIP.HDlQ3-AQ6GYgPo2Vv5QvYQAAAA?w=214&h=297&c=7&o=5&pid=1.7");
+             background-repeat:no-repeat;
+             background-position: center;
+             /* no repeat is used so that the image should not repeat */
+        }
+        #four{
+             /* background-color: red; */
+             height: 1000px;
+             width: 1000px;
+             /* border-color: green;
+             border-width: 4 px;
+             border-radius: 20px;
+             border-style: solid; */
+             background-image: url("https://th.bing.com/th/id/OIP.HDlQ3-AQ6GYgPo2Vv5QvYQAAAA?w=214&h=297&c=7&o=5&pid=1.7");
+             background-repeat:no-repeat;
+             background-position: center right;
+             /* no repeat is used so that the image should not repeat */
+        }
+
+    </style>
+</head>
+<body>
+    <p id="one">Lorem ipsum dolor sit.</p>
+    <p id="two">Lorem ipsum dolor sit.</p>
+    <p id="three">Lorem ipsum dolor sit.</p>
+    <p id="four">Lorem ipsum dolor sit.</p>
+    
+</body>
+</html>

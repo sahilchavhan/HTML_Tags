@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event listening</title>
+    <style>
+        #two{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="one">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque earum dolorum impedit nostrum sunt vero tempore debitis, placeat architecto iure quaerat, ratione ut iusto nemo repudiandae fuga! Dolorum ratione vel quia ipsum minus, quo assumenda quaerat recusandae excepturi vitae voluptatem harum magnam provident illum laudantium distinctio optio perspiciatis quasi iure reprehenderit voluptatum quas sunt quis! Itaque recusandae accusamus soluta eos?
+    </div>
+    <button id="two" onclick="hide()">
+        hide
+    </button>
+    <button id="two" onclick="show()">
+        show
+    </button>
+    <script>
+        function hide(){
+            let b=document.getElementById("one");
+            b.style.display='none';
+        }
+        function show(){
+            let b=document.getElementById("one");
+            if(b.style.display =='none'){
+                b.style.display='block'
+            }
+        }
+    </script>
+    
+</body>
+</html>

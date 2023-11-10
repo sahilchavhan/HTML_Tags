@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string functions</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <script>
+        // first occurence of string
+        var string='this is string'
+        var p=string.indexOf('is');
+        console.log(p);
+
+        //last occurence of string
+        var q=string.lastIndexOf('is');
+        console.log(q);
+
+        //substring from a string
+        var substring=string.slice(1,7)
+        console.log(substring)
+
+        //replacing a string
+        var replaced=string.replace('string','sahil')
+        console.log(replaced);
+
+        //swapcase
+        console.log(string.toUpperCase())
+
+        // ther are mny functions such as trim,concat
+
+        var a=string.charAt(7);
+        var b=string.charCodeAt(5);
+        console.log(a);
+        console.log(string[3])
+    </script>
+</body>
+</html>

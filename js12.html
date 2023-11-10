@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and time</title>
+</head>
+<body>
+    <div class="container">
+        the time is 
+    </div>
+    <div id="time"> </div>
+    <script>
+            t= new Date();
+            console.log(t);
+            document.getElementById('time').innerHTML=t;
+        
+            let n=new Date(0);
+            document.getElementById('time').innerHTML=n;
+
+            let q=new Date("2030-08-15");
+            document.getElementById('time').innerHTML=q;
+
+            let p=new Date(2050, 8, 23, 8, 56, 30);
+            document.getElementById('time').innerHTML=p;
+
+            // let yr= newDate.getYear();
+            // console.log(yr)
+            // document.getElementById('time').innerHTML=yr;
+
+            let m = newDate().getMonth();
+            console.log("the month is",m);
+    </script>
+    
+</body>
+</html>

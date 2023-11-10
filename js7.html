@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops</title>
+</head>
+<body>
+    <h1 id="one">Lorem ipsum dolor sit amet consectetur.</h1>
+    <script>
+        for(i=0;i<4;i=i+1){
+            console.log(i)
+            document.getElementById("one").innerHTML=i;
+        }
+
+
+        while(i<7){
+            console.log(i)
+            document.getElementById("one").innerHTML=i;
+            i=i+1;
+        }
+
+
+        let a=[20,30,'ram',null]
+        for(i=0;i<a.length;i++){
+            console.log(i)
+            document.getElementById("one").innerHTML=i;
+        }
+
+        let employee={
+            name:'sahil',
+            age:20,
+            barnch:'cmpn',
+            year:'third'
+
+        }
+        for (key in employee){
+            console.log(`the ${key} of employee is ${employee[key]}`)
+        }
+    </script>
+</body>
+</html>

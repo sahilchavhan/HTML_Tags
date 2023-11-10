@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <style>
+        div{
+            padding: 10px;
+        }
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>REGISTRATION PAGE</h1>
+    <form action="/action.php" name="myform" onsubmit="return validateform()" method="post">
+    <div id="one">Name: <input type="text" name="fname"> <span class="forerror"></span></div>
+    <div id="three">Phone no: <input type="text" name="phone"> <span class="forerror"></span></div>
+    <div id="five">Create Password: <input type="text"> <span class="forerror"></span></div>
+    <div id="seven">Confirm Password: <input type="text"> <span class="forerror"></span></div>
+    <div> <button>submit</button></div>
+    </form>
+
+     <script>
+        function seterror(id,error){
+            element=document.getElementById(id);
+            element.getElementsByClassName('forerror')[0].innerHTML=error;
+        }
+
+        function validateform(){
+            var returnval=true;
+            var name=document.forms['myform']['fname'].value;
+           // var name=document.getElementsByName('name');
+            if(name<5){
+                seterror("name","length of name is too short");
+                returnval=false;
+            }
+            
+            return returnval;
+        }
+     </script>
+</body>
+</html>

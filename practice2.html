@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <style>
+        div{
+            height: 200px;
+            width:200px;
+            background-color: black;
+            box-shadow: 2px 2px grey;
+            animation-name: bike;
+            animation-name: scooty;
+            animation-duration: 10s;
+            animation-iteration-count: 2;
+            position: absolute;
+        }
+        div::before{
+            content: 'two';
+        }
+
+        div::after{
+            content: 'three';
+        }
+        @keyframes scooty{
+            from{
+                background-image: url("mp7.png");
+            }
+            to{
+                background-image: url("mp6.png");
+            }
+        }
+
+        @keyframes bike{
+            0%{
+                top: 0px;
+                left: 0px
+            }
+            25%{
+                top: 0px;
+                left: 100px
+            }
+            50%{
+                top: 100px;
+                left: 100px
+            }
+            75%{
+                top: 100px;
+                left: 0px
+            }
+            100%{
+                top: 0px;
+                left: 0px
+            }
+        }
+        .two{
+            height: 200px;
+            width:200px;
+            background-color: black;
+            box-shadow: 2px 2px grey;
+            transition: all;
+            transition-duration: 12s;
+            position: absolute;
+            top: 500px;
+        }
+
+        .two:hover{
+            transform: translate(500px);
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        first
+    </div>
+    <div class="two">
+        first
+    </div>
+</body>
+</html>
